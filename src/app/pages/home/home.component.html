@@ -69,8 +69,27 @@
   </div>
   </div>
 </div>
-
-
+<div class="container d-flex">
+  <div class="left d-flex">
+    <div *ngFor="let icon of icons let i = index;"  id={{i}}>
+      <i class={{icon.icon}}></i>
+    </div>
+  </div>
+  <div class="right">
+    Rainmaker Help Center
+  </div>
+  </div>
+  <div id="float_list">
+    <div>
+      <i class="fa-solid fa-plus"></i>
+      New Workflows
+    </div>
+    <div class="under_line progress-bar "></div>
+    <div>
+      <i class="fa-solid fa-pencil"></i>
+      Edit Workflows
+    </div>
+  </div>
 <app-footer></app-footer>
 
 

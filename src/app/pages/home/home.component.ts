@@ -7,9 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  icons:any[]=[
+    {icon:"fa-solid fa-folder-tree"},
+    {icon:"fa-solid fa-rectangle-list"},
+    {icon:"fa-solid fa-server"},
+    {icon:"fa-solid fa-gauge-high"},
+  ]
   constructor() { }
 
   ngOnInit(): void {
+    var float:any = document.getElementById('float_list')
+
+
+        $("#0").click(()=>{
+          setTimeout(() => {
+            console.log($(this.icons[0]))
+          }, 100);
+        })
+
+
+
   }
 
 }
