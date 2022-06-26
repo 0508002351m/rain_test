@@ -1,0 +1,74 @@
+*{
+  color: white;
+}
+.right-man
+{
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  right: 0px;
+}
+.content{
+  position: absolute;
+  left: 82px;
+  top: -5px;
+}
+.enterprise{
+  margin-top:45px
+}
+.enterprise i{
+  position: relative;
+  left:7px;
+  bottom: 15px;
+  font-size: 20px;
+}
+.enterprise div{
+  font-family: gilroy ;
+  font-size: 60px ;
+  letter-spacing:-1.5px ;
+  margin-bottom: 11.5px;
+}
+.text{
+  margin-bottom: 15px;
+}
+.first_text{
+  font-size: 20px;
+  margin-top: -5px;
+}
+.second_text{
+  font-size: 13.3px;
+  margin-top: 5px;
+}
+.form{
+  margin: 5px 0px;
+  font-size: 16px;
+}
+input{
+  height: 38px;
+  width: 300px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: transparent;
+}
+.last_item{
+  align-items: center;
+  margin-top: 30px;
+  width: 300px;
+  justify-content: space-between;
+}
+.log{
+  padding: 5px 30px;
+  border: solid 1px white;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+a{
+  color: white;
+  font-size: 12px;
+}

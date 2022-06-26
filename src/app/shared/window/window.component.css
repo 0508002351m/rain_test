@@ -1,0 +1,19 @@
+*{
+  color: white;
+}
+.title{
+  text-align: center;
+  margin-top: -30px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+section{
+  width:  45rem;
+  height: 23rem;
+  margin: auto;
+  border-radius: 15px;
+}
+video{
+  object-fit: fill;
+  border-radius: 15px;
+}

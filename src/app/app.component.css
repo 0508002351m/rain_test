@@ -1,0 +1,14 @@
+*{
+  color: white;
+}
+body{
+  max-height: 1000px;
+}
+img{
+  filter: brightness(40%);
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  -webkit-filter: brightness(40%);
+}

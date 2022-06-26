@@ -1,0 +1,200 @@
+*{
+  color: white;
+}
+.right-man
+{
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  right: 0px;
+}
+.enterprise{
+  margin-top:150px
+}
+.enterprise i{
+  position: relative;
+  left:7px;
+  bottom: 15px;
+  font-size: 20px;
+}
+.enterprise div{
+  font-family: gilroy ;
+  font-size: 60px ;
+  letter-spacing:-1.5px ;
+  margin-bottom: 11.5px;
+}
+.text{
+  margin-bottom: 15px;
+  width: 38%;
+}
+.first_text{
+  color: rgba(255, 255, 255, 0.725);
+  font-size: 18px;
+  margin-top: -5px;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+.second_text{
+  color: rgba(240, 248, 255, 0.785);
+  font-size: 13.3px;
+  margin-top: 5px;
+}
+b{
+  font-weight: 400;
+  font-size: 15px ;
+}
+.form{
+  margin: 5px 0px;
+  font-size: 16px;
+}
+.upper_buttons{
+  margin-top: 30px;
+  justify-content: space-between;
+  width: 300px;
+}
+.but1{
+  color:rgb(12, 28, 39);
+  height: 38px;
+  font-size: 14px;
+  width: 140px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: transparent;
+}
+.but2{
+  margin-top: 25px;
+  color:rgb(12, 28, 39);
+  height: 38px;
+  width: 300px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: transparent;
+  font-size: 15px;
+}
+.but1 i, .but2 i{
+  color:rgb(12, 28, 39);
+  margin-right: 5px;
+}
+.last_item{
+  align-items: center;
+  margin-top: 30px;
+  width: 400px;
+  justify-content: space-between;
+}
+
+a{
+  color: white;
+  font-size: 12px;
+}
+body{
+  color: white;
+}
+.content{
+position: absolute;
+left: 82px;
+top: -5px;
+color: white;
+}
+
+header{
+color: white;
+align-items: center;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 50px;
+}
+.d-flex{
+align-items: center;
+}
+.logo{
+margin-top: -7px;
+margin-left: 80px;
+}
+.header_right{
+margin-right: 65px;
+margin-bottom: 10px;
+}
+.logout, .enterprised{
+align-items: center;
+margin-right: 15px;
+border-radius: 25px;
+padding: 5px 13px;
+border: solid 2px white;
+-webkit-border-radius: 25px;
+-moz-border-radius: 25px;
+-ms-border-radius: 25px;
+-o-border-radius: 25px;
+}
+.logout_icon, .enterprise_icon{
+margin-right: 7px;
+}
+.guided{
+  height: 60px;
+  flex-direction: column;
+  margin-top: 15px;
+  width: 100px;
+}
+.guided :last-child{
+color: rgba(255, 255, 255, 0.645);
+font-size: 13px;
+}
+.guided :first-child{
+  color: rgba(255, 255, 255, 0.645);
+  font-size: 16px;
+  }
+.progress{
+  height: 20px;
+  width: 100%;
+  background-color: transparent;
+  border: solid 1px rgba(255, 255, 255, 0.798);
+  padding: 0px 5px;
+  border-radius:20px;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  -ms-border-radius:20px;
+  -o-border-radius:20px;
+}
+.progress-bar {
+  height: 5px;
+  border-radius:20px;
+  background-color: rgba(255, 255, 255, 0.882);
+}
+
+.last_item .fa-circle-play{
+  font-size:40px;
+  border: solid white 3px;
+  color: black;
+  margin-right: 10px;
+  background-color: white;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+.last_text{
+  color: rgba(255, 255, 255, 0.675);
+  font-weight: 300;
+  font-size: 20px;
+}
+.last_item .fa-person-walking{
+  font-size:25px;
+  width: 45px;
+  text-align: center;
+  padding-top: 6px;
+  height: 45px;
+  border: solid white 3px;
+  margin-right: 10px;
+  border-radius: 45px;
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  -ms-border-radius: 45px;
+  -o-border-radius: 45px;
+}
+

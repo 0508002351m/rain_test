@@ -1,0 +1,38 @@
+*{
+  color: white;
+}
+header{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 300;
+}
+.d-flex{
+  align-items: center;
+}
+.logo{
+  margin-top: -25px;
+  margin-left: 48px;
+  margin-right: 18.5px;
+}
+.beside_logo{
+  font-family: gilroy;
+  font-size: 30px;
+  letter-spacing:-1.5px;
+  margin-bottom: 11.5px;
+}
+.header_right{
+  margin-right: 65px;
+  margin-bottom: 10px;
+}
+.logout, .enterprise{
+  align-items: center;
+  margin-right: 15px;
+  border-radius: 25px;
+  padding: 5px 13px;
+  border: solid 2px white;
+}
+.logout_icon, .enterprise_icon{
+  margin-right: 7px;
+}

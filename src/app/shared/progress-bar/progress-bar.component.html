@@ -1,0 +1,30 @@
+<div class="progress_bar">
+<div class="progress-first">
+  <ul>
+    <li class="play_step"><i class="fa-solid fa-circle-play"></i></li>
+    <li class="number_step">1</li>
+    <li class="play_step"><i class="fa-solid fa-circle-play"></i></li>
+    <li class="number_step">2</li>
+    <li class="play_step"><i class="fa-solid fa-circle-play"></i></li>
+    <li class="number_step">3</li>
+    <li class="play_step"><i class="fa-solid fa-circle-play"></i></li>
+    <li class="number_step">4</li>
+    <li class="play_step"><i class="fa-solid fa-circle-play"></i></li>
+    <li class="number_step">5</li>
+  </ul>
+</div>
+<!-- <ul>
+    <li *ngFor="let play of play_circle"><i  [ngClass]='play.icon'></i></li>
+    <li *ngFor="let num of numbered_circle">{{num.number}}</li>
+  </ul> -->
+<div >
+  <div class="progress-second d-flex">
+    <div *ngFor="let step of bar_bottom; let i = index; let o = odd; let e = even" [ngClass]="{
+      'step_odd':o,
+      'step_even':e
+    }">
+    {{step.title}}
+    </div>
+  </div>
+</div>
+</div>

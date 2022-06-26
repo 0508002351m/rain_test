@@ -1,0 +1,144 @@
+*{
+  color: white;
+}
+i {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  position: relative;
+  bottom: 4px;
+}
+.progress_bar{
+  position: absolute;
+  bottom: 100px;
+}
+.progress-first{
+  position: relative;
+  top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 98px;
+  right: 0;
+}
+li:nth-child(odd) {
+  width: 1.7em;
+  height: 1.7em;
+  text-align: center;
+  line-height: 1.65em;
+  border: solid white;
+  border-radius: 1em;
+  background: transparent;
+  margin: 0 1em;
+  font-size: 25px;
+  display: inline-block;
+  color: rgb(255, 255, 255) !important;
+}
+li:hover{
+  cursor: pointer;
+}
+ul :nth-child(even)::before{
+  content: '';
+  position: absolute;
+  top: .65em;
+  left: -1.7em;
+  width: 1.7em;
+  height: .02em;
+  background: rgb(255, 255, 255);
+  z-index: -1;
+}
+ul :nth-child(even)::after{
+  content: '';
+  position: absolute;
+  top: .65em;
+  right: -1.7em;
+  width: 1.7em;
+  height: .02em;
+  background: rgb(255, 255, 255);
+  z-index: -1;
+}
+
+ul :nth-child(even) {
+  margin-top: 10px !important;
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+  line-height: 1.4em;
+  border-radius: 1em;
+  border: 2px solid;
+  background: transparent;
+  margin: 0 1em;
+  font-weight: 600;
+  font-size: 40px;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  position: relative;
+  top: 5px;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+}
+
+li:last-child::after {
+  background-color: transparent !important;
+}
+.first::before{
+  display: none !important;
+}
+
+.progress-second{
+display: flex;
+margin-left: 130px;
+}
+.step_odd{
+position: relative;
+color: rgb(255, 255, 255);
+font-weight: 500;
+font-size: 17px;
+top: 50px;
+}
+.step_even{
+  position: relative;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  top: 20px;
+}
+.progress-second :nth-child(even)::after{
+  display: none;
+}
+
+.progress-second :nth-child(2){
+margin-left: -20px;
+}
+.progress-second :nth-child(3){
+  margin-left: -25px;
+}
+.progress-second :nth-child(4){
+margin-left: -5px;
+}
+.progress-second :nth-child(6){
+  margin-left: -5px;
+}
+.progress-second :nth-child(7){
+  margin-left: 10px;
+}
+.progress-second :nth-child(8){
+  margin-left: 20px;
+}
+
+.progress-second :nth-child(9){
+  margin-left: 8px;
+}
+.progress-second :nth-child(10){
+  margin-left: 5px;
+}
+
+/*js classes*/
+.number_focus{
+  background-color: white !important;
+  color: black !important;
+  border: transparent solid 2px!important;
+}
+.play_focus{
+  background-color: white !important;
+  color: black !important;
+}
