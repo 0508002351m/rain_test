@@ -4,7 +4,7 @@
 <header class="d-flex">
   <div class="d-flex">
     <div class="logo">
-      <img src="../../../assets/images/Logo.svg" height="135px" width="176px"
+      <img src="../../../assets/images/Logo.svg" width="200rem"
       alt="logo">
     </div>
   </div>
@@ -18,7 +18,7 @@
     </div>
   </div>
 </header>
-
+<div class="d-flex container_content">
 <div class="content">
   <div class="enterprise d-flex">
     <div>Webalo Enterprise</div>
@@ -69,17 +69,19 @@
   </div>
   </div>
 </div>
-<div class="container d-flex">
-  <div class="left d-flex">
-    <div *ngFor="let icon of icons let i = index;"  id={{i}}>
-      <i class={{icon.icon}}></i>
-    </div>
+<div class="left d-flex">
+  <div *ngFor="let icon of icons let i = index;"  id={{i}}>
+    <i class={{icon.icon}}></i>
   </div>
+</div>
+</div>
+<div class="container d-flex">
+
   <div class="right">
     Rainmaker Help Center
   </div>
   </div>
-  <div id="float_list">
+  <div id="float_list" class="d-none">
     <div>
       <i class="fa-solid fa-plus"></i>
       New Workflows

@@ -19,9 +19,9 @@ export class HomeComponent implements OnInit {
     var float:any = document.getElementById('float_list')
 
 
-        $("#0").click(()=>{
+        $("#1").click(()=>{
           setTimeout(() => {
-            console.log($(this.icons[0]))
+            console.log("kkkk")
           }, 100);
         })
 

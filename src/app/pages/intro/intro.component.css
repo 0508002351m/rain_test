@@ -1,13 +1,14 @@
+
 *{
   color: white;
 }
 .skip{
-  width: 100px;
+  width: 10vw;
   margin:auto;
-  margin-top:30px
+  margin-top:3vh
 }
 i{
-  margin-right: 5px;
+  margin-right: 0.1vw;
 }
 .skip:hover{
   cursor: pointer;
