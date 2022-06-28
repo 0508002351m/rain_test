@@ -2,6 +2,7 @@
   color: white;
 }
 header{
+  position: relative;
   color: white;
   font-family: 'Roboto', sans-serif;
   justify-content: space-between;
@@ -12,19 +13,17 @@ header{
   align-items: center;
 }
 .logo{
-  margin-top: -25px;
-  margin-left: 48px;
-  margin-right: 18.5px;
+  margin-top: -1vh;
+  margin-left: 5vw;
+  margin-right: 0.5vw;
 }
 .beside_logo{
   font-family: gilroy;
-  font-size: 30px;
-  letter-spacing:-1.5px;
-  margin-bottom: 11.5px;
+  font-size: 1.5rem;
+  letter-spacing:-0.1rem;
 }
 .header_right{
-  margin-right: 65px;
-  margin-bottom: 10px;
+  margin-right: 2vw;
 }
 .logout, .enterprise{
   align-items: center;

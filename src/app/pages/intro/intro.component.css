@@ -1,14 +1,19 @@
-
 *{
   color: white;
 }
 .skip{
-  width: 10vw;
-  margin:auto;
-  margin-top:3vh
+  position: absolute;
+  top:110rem;
+  bottom:70rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 7rem;
+  font-size: 1rem;
+  white-space:nowrap;
 }
 i{
-  margin-right: 0.1vw;
+  margin-right: 0.1rem;
 }
 .skip:hover{
   cursor: pointer;
