@@ -2,37 +2,39 @@
   color: white;
 }
 header{
+  position: relative;
+  top:5vh;
+  margin-left: 5vw;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  align-items: center;
   justify-content: space-between;
   align-items: center;
-  font-weight: 300;
 }
 .d-flex{
   align-items: center;
 }
 .logo{
-  margin-top: -25px;
-  margin-left: 48px;
-  margin-right: 18.5px;
+  position: absolute;
 }
 .beside_logo{
+  position: relative;
   font-family: gilroy;
-  font-size: 30px;
-  letter-spacing:-1.5px;
-  margin-bottom: 11.5px;
+  font-size: 2rem;
+  left: 10rem;
+  top: 0.2rem;
+  letter-spacing:-0.1rem;
 }
 .header_right{
-  margin-right: 65px;
-  margin-bottom: 10px;
+  margin-right: 3vw;
+  font-size: 1rem;
 }
 .logout, .enterprise{
   align-items: center;
-  margin-right: 15px;
-  border-radius: 25px;
-  padding: 5px 13px;
-  border: solid 2px white;
+  border-radius: 2vw;
+  margin-right: 1.5rem;
+  padding: 1.2vh 1.5vw;
+  border: solid 0.15vw white;
 }
 .logout_icon, .enterprise_icon{
-  margin-right: 7px;
+  margin-right: 0.5vw;
 }

@@ -2,40 +2,44 @@
   color: white;
 }
 .container{
-  justify-content: space-between;
-  margin-left: 50px;
+  position: relative;
   text-align: center;
+  align-items: center;
+  height: 87vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 .right{
   background-color: rgb(31, 158, 222);
-  padding: 20px 15px;
+  height: 25vh;
+  padding: 1vh 1vw ;
+  font-size: 2vh;
   writing-mode: vertical-lr;
   transform: rotate(-180deg);
   -webkit-writing-mode: vertical-lr;
   -ms-writing-mode: vertical-lr;
   text-align: center;
   position: fixed;
-  top: 40%;
-  right: 0px;
-  border-bottom-right-radius: 8px;
-  border-top-right-radius: 8px;
+  right: 0vw;
+  border-bottom-right-radius: 0.5vw;
+  border-top-right-radius: 0.5vw;
 }
 .left{
+  position: relative;
   flex-direction: column;
-  margin-top: 30px;
   align-items: center;
+  left:-12rem;
 }
 .left div{
-  border: solid 2px white;
-  border-radius: 20px;
-  width: 50px;
-  height: 50px;
-  margin-bottom: 20px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  border: solid 0.2rem white;
+  border-radius: 4rem;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 2rem;
 }
 .left i{
-  margin-top: 15px;
+  margin-top: 0.8rem;
 }
