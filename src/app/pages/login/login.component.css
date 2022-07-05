@@ -8,10 +8,16 @@
   height: 100vh;
   right: 0px;
 }
+.logo{
+  margin-left:6.5rem;
+}
 .content{
+  margin: 0;
   position: absolute;
-  left: 82px;
-  top: -5px;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 6.2rem;
 }
 .enterprise{
   margin-top:45px
@@ -32,16 +38,19 @@
   margin-bottom: 15px;
 }
 .first_text{
-  font-size: 20px;
-  margin-top: -5px;
+  font-size: 1.5rem;
+  font-weight: 200;
 }
 .second_text{
-  font-size: 13.3px;
-  margin-top: 5px;
+  font-size: 0.9rem;
+  font-weight: 200;
+  margin-top: 0.8rem;
+  margin-bottom: 2rem;
 }
 .form{
-  margin: 5px 0px;
-  font-size: 16px;
+  margin: 0.6rem 0px;
+  font-size: 1rem;
+  font-weight: 200;
 }
 input{
   height: 38px;
@@ -60,15 +69,20 @@ input{
   justify-content: space-between;
 }
 .log{
-  padding: 5px 30px;
-  border: solid 1px white;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  padding: 0.2rem 1.5rem;
+  border: solid 0.01rem white;
+  font-weight: 200;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+.log:hover{
+  cursor: pointer;
 }
 a{
   color: white;
   font-size: 12px;
+  font-weight: 200;
 }

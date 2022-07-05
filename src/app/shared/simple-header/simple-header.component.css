@@ -32,6 +32,9 @@ header{
   padding: 5px 13px;
   border: solid 2px white;
 }
+.logout:hover{
+  cursor:pointer
+}
 .logout_icon, .enterprise_icon{
   margin-right: 7px;
 }

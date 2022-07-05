@@ -26,6 +26,9 @@ header{
   padding: 1.2vh 1.5vw;
   border: solid 0.15vw white;
 }
+.logout:hover{
+  cursor:pointer
+}
 .logout_icon, .enterprise_icon{
   margin-right: 0.5vw;
 }
@@ -76,7 +79,7 @@ b{
 .but1{
   margin-top: 2rem;
   color:rgb(12, 28, 39);
-  height: 3.5rem;
+  height: 2.5rem;
   font-size: 1rem;
   white-space: nowrap;
   font-weight: 300;
@@ -89,7 +92,7 @@ b{
   white-space: nowrap;
   margin-top: 2rem;
   color:rgb(12, 28, 39);
-  height: 3.5rem;
+  height: 2.5rem;
   font-weight: 300;
   width: 21rem;
   border-radius: 2rem;
@@ -151,6 +154,9 @@ font-size: 0.8rem;
   background-color: white;
   border-radius: 6rem;
 }
+.additional_videos:hover{
+  cursor:pointer
+}
 .last_text{
   color: rgba(255, 255, 255, 0.675);
   font-weight: 300;
@@ -173,7 +179,7 @@ font-size: 0.8rem;
   position:relative;
   justify-content: space-between;
   align-items: center;
-  margin-right: 5vw;
+  margin-right: 3.5vw;
   height: 50vh;
   top: 25vh;
   margin-left: 5vw;
@@ -181,15 +187,15 @@ font-size: 0.8rem;
 }
 .right{
   background-color: rgb(31, 158, 222);
-  padding: 1vh 1vw ;
-  font-size: 2vh;
+  padding: 2vh 1vh ;
+  font-size: 1.8vh;
   writing-mode: vertical-lr;
   transform: rotate(-180deg);
   -webkit-writing-mode: vertical-lr;
   -ms-writing-mode: vertical-lr;
   text-align: center;
   position: fixed;
-  top: calc(37.5vh);
+  top: 38vh;
   right: 0vw;
   border-bottom-right-radius: 0.5vw;
   border-top-right-radius: 0.5vw;
@@ -204,13 +210,16 @@ font-size: 0.8rem;
 }
 .left div{
   position: relative;
-  border: solid 0.2rem white;
+  border: solid 0.1rem white;
   border-radius: 3rem;
   width: 2.5rem;
   height: 2.5rem;
 }
+.left div:hover{
+  cursor:pointer
+}
 .left i{
-  margin-top: 0.55rem;
+  margin-top: 0.60rem;
   font-size: 1rem;
 }
 #float_list{

@@ -1,136 +1,194 @@
-body{
+body {
   color: white;
 }
-.content{
-position: relative;
-left: 12rem;
-top: -4rem;
-color: white;
+
+.content {
+  position: relative;
+  left: 12rem;
+  top: -4rem;
+  color: white;
 }
-header{
-position: relative;
-top:6vh;
-margin-left: 5.8vw;
-margin-bottom: 5rem;
-color: white;
-align-items: center;
-justify-content: space-between;
-align-items: center;
+
+header {
+  position: relative;
+  top: 6vh;
+  margin-left: 5.8vw;
+  margin-bottom: 5rem;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-.d-flex{
-align-items: center;
+
+.d-flex {
+  align-items: center;
 }
-.logo{
-position: absolute;
+
+.logo {
+  position: absolute;
 }
-.header_right{
-margin-right: 3vw;
-font-size: 1rem;
+
+.header_right {
+  margin-right: 3vw;
+  font-size: 1rem;
 }
-.logout, .enterprised{
+
+.logout,
+.enterprised {
   align-items: center;
   border-radius: 2vw;
   margin-right: 1.5rem;
   padding: 1.2vh 1.5vw;
   border: solid 0.15vw white;
 }
-.logout_icon, .enterprise_icon{
-margin-right: 0.5vw;
+
+.enterprised:hover,
+.logout:hover {
+  cursor: pointer
 }
 
-.first_text{
+.logout_icon,
+.enterprise_icon {
+  margin-right: 0.5vw;
+}
+
+.first_text {
   color: rgba(255, 255, 255, 0.725);
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
   font-weight: 200;
 }
-.second_text{
+
+.second_text {
   font-family: gilroy;
   font-size: 1.8rem;
   margin-bottom: 1.2rem;
 }
-.third_text{
-  width:40rem;
+
+.third_text {
+  width: 40rem;
   font-size: 1rem;
   font-weight: 300;
   margin-top: 0.5rem;
   color: rgba(255, 255, 255, 0.869);
 }
-.forth_text{
+
+.forth_text {
   font-size: 0.8rem;
   margin-top: 2rem;
   color: rgb(255, 255, 255);
   text-decoration: underline;
   font-weight: 500 !important;
 }
-main{
-align-items: center;
-width: 110rem;
-height: 40rem;
-position: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-margin: auto;
-object-fit: fill;
-border-radius: 1vw;
+
+.text {
+  position: relative;
+  right: 6.3rem;
 }
-.enterprise i{
-position: relative;
-left:0.5rem;
-bottom: 0.7rem;
-font-size: 1.5rem;
+
+main {
+  align-items: center;
+  width: 110rem;
+  height: 40rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  object-fit: fill;
+  border-radius: 1vw;
 }
-.enterprise div{
-font-family: gilroy ;
-font-size: 3.5rem ;
-white-space:nowrap;
-letter-spacing:-0.1rem ;
-margin-bottom: 2rem;
-margin-top: 2.5rem;
+
+.enterprise i {
+  position: relative;
+  left: 0.5rem;
+  bottom: 0.7rem;
+  font-size: 1.5rem;
 }
-section{
+
+.enterprise {
+  position: relative;
+  right: 6.3rem;
+}
+
+.enterprise div {
+  font-family: gilroy;
+  font-size: 3.5rem;
+  white-space: nowrap;
+  letter-spacing: -0.1rem;
+  margin-bottom: 2rem;
+  margin-top: 2.5rem;
+}
+
+section {
   color: white;
   position: relative;
-  width:  35rem;
+  width: 35rem;
   height: 25rem;
-  border-radius: 4vw;
-  left:20rem;
+  left: 30.5rem;
   bottom: 2.5rem;
 }
-video{
+
+video {
   object-fit: fill;
   border-radius: 15px;
   width: 100%;
   height: 100%;
 }
-.videos_footer{
+
+.videos_footer {
   position: relative;
-  right: 66rem;
+  right: 72rem;
   top: 18rem;
 }
-.videos
-{ color: white; margin-left: 2.5rem; align-items: center; padding: 0.8rem 2rem; white-space: nowrap; border: solid 1px white; border-radius: 20vw; -webkit-border-radius: 20vw; -moz-border-radius: 20vw; -ms-border-radius: 20vw; -o-border-radius: 20vw;
+
+.videos {
+  color: white;
+  margin-left: 2.5rem;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  white-space: nowrap;
+  border: solid 1px white;
+  border-radius: 20vw;
 }
-.videos_after_click{
-background-color: white;
-color:black !important;
+
+.videos:hover {
+  cursor: pointer;
 }
-.icon_after_click{
-border: 3px solid black !important;
-background-color: black !important;
-color: white !important;
+
+.videos_after_click {
+  background-color: white;
+  color: black !important;
 }
-.videos i{
-font-size: 18px;
-margin-right: 10px;
-background-color: white;
-color:rgb(12, 28, 39);
-border:white solid 3px;
-border-radius: 60px;
--webkit-border-radius: 60px;
--moz-border-radius: 60px;
--ms-border-radius: 60px;
--o-border-radius: 60px;
+
+.icon_after_click {
+  border: 3px solid black !important;
+  background-color: black !important;
+  color: white !important;
+}
+
+.videos i {
+  font-size: 18px;
+  margin-right: 10px;
+  background-color: white;
+  color: rgb(12, 28, 39);
+  border: white solid 3px;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+}
+.frame{
+  display: none ;
+}
+.none{
+  display: none !important;
+}
+.block{
+  display: block !important;
+}
+.frame:first-child{
+  display:block;
 }

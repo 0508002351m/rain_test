@@ -1,26 +1,34 @@
-*{
+* {
   color: white;
 }
+
 i {
   color: rgb(255, 255, 255);
   font-size: 16px;
   position: relative;
   bottom: 4px;
 }
-.progress_bar{
+
+.progress_bar {
   position: absolute;
   bottom: 100px;
   left: -60px;
   width: 100%;
 }
-.progress-first{
+
+.progress-first {
   position: relative;
   top: 20px;
   margin-left: auto;
   margin-right: auto;
-  left: 98px;
+  left: 155px;
   right: 0;
 }
+
+.progress-first i {
+  margin-left: 0.5rem;
+}
+
 li:nth-child(odd) {
   width: 1.7em;
   height: 1.7em;
@@ -32,12 +40,14 @@ li:nth-child(odd) {
   margin: 0 1em;
   font-size: 25px;
   display: inline-block;
-  color: rgb(255, 255, 255) !important;
+  color: rgb(255, 255, 255);
 }
-li:hover{
+
+li:hover {
   cursor: pointer;
 }
-ul :nth-child(even)::before{
+
+ul :nth-child(even)::before {
   content: '';
   position: absolute;
   top: .65em;
@@ -47,7 +57,8 @@ ul :nth-child(even)::before{
   background: rgb(255, 255, 255);
   z-index: -1;
 }
-ul :nth-child(even)::after{
+
+ul :nth-child(even)::after {
   content: '';
   position: absolute;
   top: .65em;
@@ -57,7 +68,9 @@ ul :nth-child(even)::after{
   background: rgb(255, 255, 255);
   z-index: -1;
 }
-
+ul :nth-child(10)::after{
+  height: 0em;
+}
 ul :nth-child(even) {
   margin-top: 10px !important;
   width: 1.5em;
@@ -74,88 +87,101 @@ ul :nth-child(even) {
   color: rgb(255, 255, 255);
   position: relative;
   top: 5px;
-  -webkit-border-radius: 1em;
-  -moz-border-radius: 1em;
-  -ms-border-radius: 1em;
-  -o-border-radius: 1em;
+}
+li:last-child{
+  display: none;
 }
 
-li:last-child::after {
+li:last-child::after{
   background-color: transparent !important;
 }
-.first::before{
+
+.first::before {
   display: none !important;
 }
 
-.progress-second{
-display: flex;
-margin-left: 130px;
+.progress-second {
+  display: flex;
+  margin-left: 12.5rem;
 }
-.step_odd{
-position: relative;
-color: rgb(255, 255, 255);
-font-weight: 500;
-font-size: 14px;
-top: 50px;
-width: 150px;
-text-align: center;
+
+.step_odd {
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 14px;
+  top: 20px;
+  width: 150px;
+  text-align: center;
 }
-.step_even{
+
+.step_even {
   width: 150px;
   position: relative;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.7);
-  top: 20px;
+  top: 50px;
   text-align: center;
 }
-.progress-second :nth-child(even)::after{
+
+.progress-second :nth-child(even)::after {
   display: none;
 }
-.progress-second :nth-child(1){
-  margin-left: -20px;
-  }
-.progress-second :nth-child(2){
-  margin-left: -10px;
-}
-.progress-second :nth-child(3){
-  margin-left: -25px;
-}
-.progress-second :nth-child(4){
-margin-right: -15px;
-}
-.progress-second :nth-child(5){
-  margin-right: -5px;
-}
-.progress-second :nth-child(6){
-  margin-right: -15px;
-}
-.progress-second :nth-child(7){
-  margin-right: -20px;
-}
-.progress-second :nth-child(8){
-  margin-right: -10px;
+
+.progress-second div {
+  white-space: nowrap;
+  position: relative;
 }
 
-.progress-second :nth-child(9){
-  margin-right: -20px;
+.progress-second :nth-child(2) {
+  right: 30px;
 }
-.progress-second :nth-child(10){
-  margin-right: -10px;
+
+.progress-second :nth-child(3) {
+  left: -40px;
 }
-.progress-second :nth-child(11){
-  margin-right: -50px;
+
+.progress-second :nth-child(4) {
+  right: 40px;
 }
-img{
+
+.progress-second :nth-child(5) {
+  right: 28px;
+}
+
+.progress-second :nth-child(6) {
+  right: 28px;
+}
+
+.progress-second :nth-child(7) {
+  right: 30px;
+}
+
+.progress-second :nth-child(8) {
+  right: 30px;
+}
+
+.progress-second :nth-child(9) {
+  right: 15px;
+}
+
+.progress-second :nth-child(10) {
+  right: 10px;
+}
+
+img,
+video {
   border-radius: 10px;
   width: 78rem;
-  height: 34rem;
+  height: 32rem;
   margin-left: 80px;
-  margin-top: 140px;
+  margin-top: 110px;
+  object-fit: fill;
 }
 
-section{
+section {
   width: 85rem;
-  height: 57rem;
+  height: 55rem;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -166,13 +192,61 @@ section{
   border-radius: 1vw;
 }
 
-/*js classes*/
-.number_focus{
-  background-color: white !important;
-  color: black !important;
-  border: transparent solid 2px!important;
+.skip {
+  display: flex;
+  position: relative;
+  top: 6.5rem;
+  left: 76rem;
+  width: 7rem;
+  font-size: 1rem;
 }
-.play_focus{
+
+i {
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.skip:hover {
+  cursor: pointer;
+}
+
+.lf {
+  position: relative;
+  right: 1.5rem !important;
+  top: 20px;
+}
+
+/*js classes*/
+.number_focus {
   background-color: white !important;
   color: black !important;
+  border: transparent solid 2px !important;
+}
+
+.play_focus {
+  background-color: white !important;
+  color: black !important;
+}
+
+.re {
+  color: rgba(255, 255, 255, 0.41) !important;
+}
+
+.content {
+  display: none;
+}
+
+#content:first-of-type {
+  display: inline;
+}
+
+.initial {
+  background-color: white !important;
+  color: black !important;
+}
+
+.prev_step {
+  color: rgba(255, 255, 255, 0.41) !important;
+  background-color: transparent !important;
+  border: rgba(255, 255, 255, 0.41) solid 1px !important;
 }

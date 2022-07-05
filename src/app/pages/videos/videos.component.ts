@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import * as $ from "jquery";
 
 
@@ -8,26 +8,63 @@ import * as $ from "jquery";
   templateUrl: './videos.component.html',
   styleUrls: ['./videos.component.css']
 })
-export class VideosComponent implements OnInit {
+export class VideosComponent implements  AfterViewInit {
 
-  // videos:any[]=[
-  //   {video:"video 1"},
-  //   {video:"video 2"},
-  //   {video:"video 3"},
-  //   {video:"video 4"},
-  //   {video:"video 5"},
-  //   {video:"video 6"},
-  // ]
+  videos:any[]=[
+    {
+      icon:"fa-solid fa-circle-play",
+      item:"video 1"
+    },
+    {
+      icon:"fa-solid fa-circle-play",
+      item:"video 2"
+    },
+    {
+      icon:"fa-solid fa-circle-play",
+      item:"video 3"
+    },
+    {
+      icon:"fa-solid fa-circle-play",
+      item:"video 4"
+    },
+    {
+      icon:"fa-solid fa-circle-play",
+      item:"video 5"
+    },
+    {
+      icon:"fa-solid fa-circle-play",
+      item:"video 6"
+    },
+  ]
+
+  view:any[]=[
+    {src:"../../../assets/videos/Blue Tit - 8201.mp4"},
+    {src:"../../../assets/videos/Dog - 45587.mp4"},
+    {src:"../../../assets/videos/Fish - 16166.mp4"},
+    {src:"../../../assets/videos/Kid - 4470.mp4"},
+    {src:"../../../assets/videos/The Hague - 27999.mp4"},
+    {src:"../../../assets/videos/Fish - 16166.mp4"},
+  ]
 
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngAfterViewInit(): void {
     var video = document.querySelectorAll(".videos")
+    var frame = document.querySelectorAll(".frame")
     for (let i = 0; i < video.length; i++) {
-      video[i].addEventListener('click',()=>{
+      video[i].addEventListener("click", function() {
+        video.forEach(function(e){
+            e.classList.remove("videos_after_click")
+            $(e).children().children().removeClass("icon_after_click")
+        })
+        frame.forEach(function(e){
+          e.classList.add("none")
+          e.classList.remove("block")
+      })
         $(video[i]).children().children().addClass("icon_after_click")
         video[i].classList.add("videos_after_click");
+        frame[i].classList.add("block")
       })
 
     }

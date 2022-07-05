@@ -14,15 +14,15 @@
 }
 .right{
   background-color: rgb(31, 158, 222);
-  height: 25vh;
-  padding: 1vh 1vw ;
-  font-size: 2vh;
+  padding: 2vh 1vh ;
+  font-size: 1.8vh;
   writing-mode: vertical-lr;
   transform: rotate(-180deg);
   -webkit-writing-mode: vertical-lr;
   -ms-writing-mode: vertical-lr;
   text-align: center;
   position: fixed;
+  top: 38vh;
   right: 0vw;
   border-bottom-right-radius: 0.5vw;
   border-top-right-radius: 0.5vw;
@@ -31,7 +31,7 @@
   position: relative;
   flex-direction: column;
   align-items: center;
-  left:-12rem;
+  left:-10rem;
 }
 .left div{
   border: solid 0.2rem white;
@@ -40,6 +40,7 @@
   height: 3rem;
   margin-bottom: 2rem;
 }
+
 .left i{
   margin-top: 0.8rem;
 }

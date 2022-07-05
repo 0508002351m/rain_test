@@ -9,7 +9,7 @@
     </div>
   </div>
   <div class="header_right d-flex">
-    <div class="d-flex logout">
+    <div class="d-flex logout" routerLink="/login">
       <div class=logout_icon><i class="fa-solid fa-right-from-bracket"></i>
       </div>
       <div>
@@ -33,16 +33,16 @@
     </div>
   </div>
   <div class="upper_buttons d-flex">
-    <button class="but1">
+    <button class="but1" routerLink="/light">
       <i class="fa-solid fa-display"></i> Desktop Client
     </button>
-    <button class="but1">
+    <button class="but1" routerLink="/light">
       <i class="fa-solid fa-mobile-screen-button"></i> Mobile Client
     </button>
   </div>
   <div>
     <div>
-      <button class="but2">
+      <button class="but2" routerLink="/light">
         <i class="fa-solid fa-screwdriver-wrench"></i> Administrative Website
       </button>
     </div>
@@ -60,17 +60,17 @@
         <div>25%</div>
       </div>
     </div>
-  <div class="d-flex">
+  <div class="d-flex additional_videos" routerLink="/videos">
     <div>
       <i class="fa-solid fa-circle-play"></i>
     </div>
-    <div class="last_text">
+    <div class="last_text" >
       Additional Videos
     </div>
   </div>
   </div>
 </div>
-<div class="left d-flex">
+<div class="left d-flex" routerLink="/light">
   <div *ngFor="let icon of icons let i = index;"  id={{i}}>
     <i class={{icon.icon}}></i>
   </div>

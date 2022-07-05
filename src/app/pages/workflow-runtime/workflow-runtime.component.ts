@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { first } from 'rxjs';
 
 @Component({
   selector: 'app-workflow-runtime',
@@ -6,59 +7,102 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./workflow-runtime.component.css']
 })
 export class WorkflowRuntimeComponent implements OnInit {
-  bar_bottom:any[]=[
+  bar_bottom: any[] = [
     {
-      title:"Welcome Module Journey"
+      title: "Create Your Own Form"
     },
     {
-      title:"Environment Group Admin"
+      title: "Workflow Manager"
     },
     {
-      title:"Data Connection -REST"
+      title: "Link To WorkFlow"
     },
     {
-      title:"Form Designer"
+      title: "Process Visual"
     },
     {
-      title:"Workflow Manager"
+      title: "Workflow Dashboard"
     },
     {
-      title:"Workflow Runtime Data Capture & Notification"
+      title: "Charting"
     },
     {
-      title:"Data /Workflow Integration"
+      title: "Chat Configuration"
     },
     {
-      title:"WF Runtime & Notification"
+      title: "Integration"
     },
     {
-      title:"Data Visualization"
-    },
-    {
-      title:"Process Visualization"
-    },
-    {
-      title:"CTA - DYI"
+      title: "Configure REST Task"
     },
   ]
 
+  dynamicContent: any[] = [
+    {
+      src: "../../../assets/images/m (1).jpg",
+      vidSrc: "../../../assets/videos/Blue Tit - 8201.mp4"
+    },
+    {
+      src: "../../../assets/images/m (2).jpg",
+      vidSrc: "../../../assets/videos/Dog - 45587.mp4"
+    },
+    {
+      src: "../../../assets/images/m (3).jpg",
+      vidSrc: "../../../assets/videos/Fish - 16166.mp4"
+    },
+    {
+      src: "../../../assets/images/m (4).jpg",
+      vidSrc: "../../../assets/videos/Kid - 4470.mp4"
+    },
+    {
+      src: "../../../assets/images/m (5).jpg",
+      vidSrc: "../../../assets/videos/The Hague - 27999.mp4"
+    },
+
+  ];
+
+  played_step: any[] = [
+    {
+      icon: "fa-solid fa-circle-play",
+      number: 1,
+    },
+    {
+      icon: "fa-solid fa-circle-play",
+      number: 2,
+    },
+    {
+      icon: "fa-solid fa-circle-play",
+      number: 3,
+    },
+    {
+      icon: "fa-solid fa-circle-play",
+      number: 4,
+    },
+    {
+      number: 5,
+    },
+  ];
+
   constructor() { }
-
   ngOnInit(): void {
-    var play= document.querySelectorAll('.play_step')
-    var num= document.querySelectorAll('.number_step')
-    for (let i = 0; i < play.length; i++) {
-      play[i].addEventListener('click',()=>{
-        const icon:any = (play[i].firstChild)
-        icon.classList.add('play_focus')
-        play[i].classList.add('play_focus')
-      })
-    }
-    for (let i = 0; i < num.length; i++) {
-      num[i].addEventListener('click',()=>{
-        num[i].classList.add("number_focus")
-      })
-    }
+    var play = document.querySelectorAll('.play_step')
+    var num = document.querySelectorAll('.number_step')
+    var progress = document.querySelectorAll('.progress-second')
+    $(document).ready(function () {
+      $("#skip").click(function () {
+        if ($(".content:visible").next().length != 0) {
+          $(".content:visible").next().show().prev().hide();
+          if ($(".re").length != 0) {
+            $(".active").next().addClass("re active").prev().removeClass("active");
+          }
+          else { $(".active").addClass("re") };
+          $(".initial").next().addClass("initial").prev().html('<i class="fa-solid fa-check"></i>').removeClass("initial").addClass("prev_step");
+          $(".initial i").addClass("initial")
+        }
+        else{
+          window.location.replace("");
+        }
+      });
+    });
   }
-
 }

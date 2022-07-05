@@ -2,14 +2,14 @@
   color: rgba(255, 255, 255, 0.62);
 }
 footer{
-  width: 30vw;
-  font-size: 0.7vw;
+  width: 20vw;
+  font-size: 0.65vw;
   position: absolute;
   bottom: 2vh;
   margin-left:auto;
   margin-right:auto;
   right:0;
-  left:15vw;
+  left:8vw;
   white-space: nowrap;
   z-index: 999;
 }
