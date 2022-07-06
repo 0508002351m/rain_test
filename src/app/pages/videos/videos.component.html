@@ -54,6 +54,10 @@
     </section>
   </div>
   <div class="videos_footer d-flex">
+    <div class="videos d-flex videos_after_click">
+      <div><i class="fa-solid fa-circle-play icon_after_click"></i></div>
+      <div>video 1</div>
+    </div>
     <div class="videos d-flex" *ngFor="let video of videos">
       <div><i [ngClass]='video.icon'></i></div>
       <div>{{video.item}}</div>

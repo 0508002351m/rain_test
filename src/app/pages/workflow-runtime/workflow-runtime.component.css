@@ -46,19 +46,21 @@ li:nth-child(odd) {
 li:hover {
   cursor: pointer;
 }
-
-ul :nth-child(even)::before {
+li{
+  position: relative;
+}
+li:nth-of-type(odd)::after {
   content: '';
   position: absolute;
   top: .65em;
-  left: -1.7em;
-  width: 1.7em;
+  left: 1.6em;
+  width: 2.7em;
   height: .02em;
   background: rgb(255, 255, 255);
   z-index: -1;
 }
 
-ul :nth-child(even)::after {
+li:nth-of-type(even)::after {
   content: '';
   position: absolute;
   top: .65em;
@@ -68,7 +70,7 @@ ul :nth-child(even)::after {
   background: rgb(255, 255, 255);
   z-index: -1;
 }
-ul :nth-child(10)::after{
+li:nth-of-type(10)::after{
   height: 0em;
 }
 ul :nth-child(even) {
@@ -247,6 +249,11 @@ i {
 
 .prev_step {
   color: rgba(255, 255, 255, 0.41) !important;
-  background-color: transparent !important;
+  /* background-color: transparent !important; */
   border: rgba(255, 255, 255, 0.41) solid 1px !important;
 }
+
+.prev_step::after {
+  background: rgba(255, 255, 255, 0.41) !important;
+}
+

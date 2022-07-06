@@ -13,10 +13,6 @@ export class VideosComponent implements  AfterViewInit {
   videos:any[]=[
     {
       icon:"fa-solid fa-circle-play",
-      item:"video 1"
-    },
-    {
-      icon:"fa-solid fa-circle-play",
       item:"video 2"
     },
     {
